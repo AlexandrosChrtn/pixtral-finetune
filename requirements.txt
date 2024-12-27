@@ -1,0 +1,9 @@
+pillow==10.4.0
+praw==7.8.1
+tqdm==4.67.0
+huggingface-hub==0.26.5
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.47.1
+peft==0.14.0
+datasets==2.18.0
