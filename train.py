@@ -179,14 +179,13 @@ login(token="your_hf_token")
 
 # Replace with your repo name on Hugging Face
 repo_id = "your_hf_name/my_awesome_LLM"
-repo_name = "my_awesome_LLM"
 
 try:
     # Attempt to create the repo if it doesn't exist
-    create_repo(repo_name, private=True, use_auth_token=True)  # Set private=True to make the repo private
-    print(f"Repo {repo_name} created and set to private.")
+    create_repo(repo_id.split('/')[-1], private=True, use_auth_token=True)  # Set private=True to make the repo private
+    print(f"Repo {repo_id.split('/')[-1]} created and set to private.")
 except Exception as e:
-    print(f"Repo {repo_name} already exists or could not be created: {e}")
+    print(f"Repo {repo_id.split('/')[-1]} already exists or could not be created: {e}")
 
 # Upload the saved model to the Hugging Face repository
 upload_folder(
