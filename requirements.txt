@@ -1,6 +1,7 @@
 pillow==10.4.0
 praw==7.8.1
 tqdm==4.67.0
+pandas==2.2.1
 huggingface-hub==0.26.5
 torch==2.5.1
 torchvision==0.20.1
