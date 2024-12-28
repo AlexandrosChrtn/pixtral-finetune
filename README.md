@@ -55,7 +55,7 @@ The `train.py` script is used to fine-tune the Pixtral model using the data fetc
 ### Usage
 
 1. Ensure your data is prepared and available in `memes_data.csv` and in the directory `imgs`.
-2. If you want to upload it to Hugging Face, add your Hugging Face access token in `login(token="your_hf_token")`. You can generate one [here](https://huggingface.co/settings/tokens).
+2. If you want to upload it to [Hugging Face](https://huggingface.co/), add your Hugging Face access token in `login(token="your_hf_token")`. You can generate one [here](https://huggingface.co/settings/tokens). Also, you need to replace `repo_id = "your_hf_name/my_awesome_LLM"` with the name you want for your model and your name in Hugging Face
 3. Run the training script:
 ```
 python3 train.py
